@@ -14,6 +14,7 @@ import PersonAddAltIcon from '@mui/icons-material/PersonAddAlt';
 import IconButton from './components/Button/IconButton/IconButton';
 import FloatingActionButton from './components/Button/FloatingActionButton/FloatingActionButton';
 import AddIcon from '@mui/icons-material/Add';
+import BadgeCard from './components/Cards/BadgeCard/BadgeCard';
 function App() {
   return (
     <div className="App">
@@ -43,7 +44,18 @@ function App() {
 <FloatingActionButton icon= {<AddIcon/>}/> */}
 
 
-
+<BadgeCard
+        title="Card Title"
+        content="This is the content of the card."
+        badges={ ['Badge 1', 'Badge 2', 'Badge 3']}
+        imageUrl={"https://c4.wallpaperflare.com/wallpaper/41/681/303/pc-hd-1080p-nature-1920x1080-wallpaper-preview.jpg"}
+      />
+<BadgeCard
+        title="Card Title"
+        content="This is the content of the card."
+        badges={ ['Badge 1', 'Badge 2']}
+        
+      />
 
 </div>
   );

@@ -1,0 +1,76 @@
+/* CardWithImage.css */
+
+.card {
+    width: 400px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 16px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .image-container {
+    
+    overflow: hidden;
+  }
+  
+  .card-image {
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+  }
+  
+  .badge-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px;
+    color: #ffffff;
+  }
+  
+  .badge {
+    background-color: #3498db;
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin-right: 8px;
+    font-size: 12px;
+  }
+  
+  .card-content {
+    padding: 16px;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .content-text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .card {
+      width: 100%; 
+      margin: 16px 0; 
+    }
+  
+    .image-container {
+      height: auto; 
+    }
+  
+    .badge-container {
+      position: relative;
+      padding: 8px;
+      background-color: transparent;
+    }
+  
+    .card-image {
+      height: auto;
+    }
+  }
+  
