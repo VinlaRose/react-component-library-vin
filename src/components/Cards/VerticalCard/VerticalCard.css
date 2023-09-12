@@ -1,0 +1,43 @@
+
+
+.vertical-product-card {
+    display: flex;
+    width: 400px;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    background-color: #ffffff;
+  }
+  
+  .product-image {
+    width: 100px; /* Adjust the image width as needed */
+    height: 100px; /* Adjust the image height as needed */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 16px;
+  }
+  
+  .product-details {
+    flex-grow: 1;
+  }
+  
+  .product-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .product-description {
+    font-size: 14px;
+    margin: 8px 0;
+  }
+  
+  .product-price {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    color: #e74c3c; /* Price color can be customized */
+  }
+  

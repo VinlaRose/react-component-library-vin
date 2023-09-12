@@ -1,0 +1,45 @@
+/* CardWithImage.css */
+
+
+  
+  .close-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .close-button:focus {
+    outline: none;
+  }
+  
+  .close-button > svg {
+    fill: #777777;
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Responsive styles for mobile view */
+  @media (max-width: 768px) {
+    .card {
+      width: 100%;
+      margin: 16px 0;
+    }
+  
+    .image-container {
+      height: auto;
+    }
+  
+    .badge-container {
+      position: relative;
+      padding: 8px;
+      background-color: transparent;
+    }
+  
+    .card-image {
+      height: auto;
+    }
+  }
+  
