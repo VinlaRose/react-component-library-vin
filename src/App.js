@@ -7,7 +7,13 @@ import AvatarBadge from './components/Badges/AvatarBadge/AvatarBadge';
 import IconBadge from './components/Badges/IconBadge/IconBadge';
 import MessageIcon from '@mui/icons-material/Message';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-
+import Button from './components/Button/PrimaryButton/Button';
+import { Link } from '@mui/material';
+import LinkButton from './components/Button/LinkButton/LinkButton';
+import PersonAddAltIcon from '@mui/icons-material/PersonAddAlt';
+import IconButton from './components/Button/IconButton/IconButton';
+import FloatingActionButton from './components/Button/FloatingActionButton/FloatingActionButton';
+import AddIcon from '@mui/icons-material/Add';
 function App() {
   return (
     <div className="App">
@@ -25,8 +31,19 @@ function App() {
 <AvatarBadge src="https://1fid.com/wp-content/uploads/2022/09/whatsapp-profile-pic-29-1024x1024.jpg"  username="John" online={true} />
       <AvatarBadge src="https://1fid.com/wp-content/uploads/2022/09/whatsapp-profile-pic-29-1024x1024.jpg"  username="Alice" online={false} /> */}
       
-      <IconBadge icon={<MessageIcon/>} count={55}/>
-      <IconBadge icon={<ShoppingCartIcon/>} count={8}/>
+      {/* <IconBadge icon={<MessageIcon/>} count={55}/>
+      <IconBadge icon={<ShoppingCartIcon/>} count={8}/> */}
+
+
+{/* <Button text={"Click"}/> */}
+{/* <LinkButton href={"https://vinla.netlify.app/"} text={"LINK"}/> */}
+
+{/* <IconButton text={"Follow"} icon={<PersonAddAltIcon/>}/>
+
+<FloatingActionButton icon= {<AddIcon/>}/> */}
+
+
+
 
 </div>
   );
