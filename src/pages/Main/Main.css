@@ -4,14 +4,14 @@
     font-weight: 700;
 }
 .doc-page{
-    margin-left: 100px;
-    margin-right: 300px;
-    background-color: #dfd3f6;
+    margin-left: 200px;
+    margin-right: 200px;
+    
 }
 h1{
     color: #e83e8c;
     font-size: 36px;
-    font-weight: 700;
+    font-weight: 900;
     text-align: left;
 }
 
@@ -49,6 +49,17 @@ h1{
     background-color: #a178ed;
     transform: scale(1.05);
 
+  }
+  
+  @media screen and (max-width: 768px) {
+    .doc-page {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  
+    h1 {
+      font-size: 24px; 
+    }
   }
   
   

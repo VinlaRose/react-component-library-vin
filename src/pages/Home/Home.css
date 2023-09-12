@@ -8,10 +8,40 @@
     
   }
   
-  .content {
+  .home-content {
     text-align: center;
   }
   
+  .home-heading{
+    color: rgb(44, 40, 40);
+    font-size: 46px;
+    text-align: center;
+  }
+  
+  .home-description{
+    color: #44107a;
+    font-size: 26px;
+    font-weight: 400;
+  }
+  
+  
+.home-get-started-button {
+    padding: 15px 25px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #e83e8c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  .home-get-started-button:hover {
+    background-color: rgb(246, 69, 151);
+    transform: scale(1.05); 
+  }
   
   .animate-charcter{
 place-items: centre;
@@ -46,33 +76,17 @@ margin: auto;
       text-align: center;
     }
     }
-    
-  .heading {
-    font-size: 56px;
-    font-weight: bolder;
-    margin-bottom: 20px;
-    color: #333; 
-  }
-  
-  .description {
-    font-size: 26px;
-    margin-bottom: 30px;
-    color: #555; 
-  }
-  
-  .get-started-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: 600;
-    background-color: #e83e8c; 
-    color: #fff; 
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .get-started-button:hover {
-    background-color: #e60f73; 
-  }
-  
+    @media screen and (max-width: 768px) {
+        .home-heading {
+          font-size: 36px;
+        }
+      
+        .home-description {
+          font-size: 20px;
+        }
+      
+        .home-get-started-button {
+          font-size: 14px;
+          padding: 8px 16px; 
+        }
+      }
