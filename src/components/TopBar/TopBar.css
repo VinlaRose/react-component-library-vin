@@ -1,0 +1,31 @@
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(#6610f2, white);
+    color: black;
+    padding: 0.5rem;
+  
+  }
+   
+  .navigation .nav-brand {
+    font-weight: bold;
+  }
+  
+  .nav-brand a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .navigation .nav-pills {
+    text-align: right;
+    margin: 0.6rem 1rem;
+  }
+  
+  .navigation .link {
+    color: black;
+  }
+  
+  .navigation .link-active {
+    font-weight: bold;
+  }
