@@ -25,6 +25,7 @@ Alert components are essential UI elements used to convey important messages or 
 <Alert type="info" message="Information: Here's some important info." />
 
 </Box>
+<p className="how-to-use">How to use :</p>
 
 <CodeBox code={code}/>
 

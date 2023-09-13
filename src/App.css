@@ -16,13 +16,15 @@
 body{
 font-family: 'Rajdhani', sans-serif;  
 }
-
+button{
+    font-family: 'Rajdhani', sans-serif;  
+}
 
 
 .App {
   text-align: center;
   /* height: 100vh; */
-  padding-bottom: 100px;
+  
  
 }
 

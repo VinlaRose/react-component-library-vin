@@ -31,6 +31,7 @@ export const Buttons = () => {
             <Box>
             <Button text={"Click"}/>
             </Box>
+            <p className="how-to-use">How to use :</p>
             <CodeBox code={code1}/>
             <Divider/>
             
@@ -39,6 +40,7 @@ export const Buttons = () => {
             <Box>
           <LinkButton href={"https://vinla.netlify.app/"} text={"LINK"}/>
             </Box>
+            <p className="how-to-use">How to use :</p>
             <CodeBox code={code2}/>
             <Divider/>
             
@@ -48,6 +50,7 @@ export const Buttons = () => {
             <IconButton text={"Follow"} icon={<PersonAddAltIcon/>}/>
             </Box>
             
+            <p className="how-to-use">How to use :</p>
             <CodeBox code={code3}/>
             <Divider/>
             

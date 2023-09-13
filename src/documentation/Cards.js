@@ -66,6 +66,7 @@ export const Cards = () => {
             </Box>
             
             
+      <p className="how-to-use">How to use :</p>
       <CodeBox code={code1}/>
             <Divider/>
             <h3 className="doc-secondry-headings">Cards with dismiss</h3>
@@ -73,6 +74,7 @@ export const Cards = () => {
             <DismissCard  title="Card Title" content="This is the content of the card."/>
             </Box>
             
+            <p className="how-to-use">How to use :</p>
             <CodeBox code={code2}/>
             <Divider/>
             <h3 className="doc-secondry-headings">Cards with Text Overlay</h3>
@@ -83,6 +85,7 @@ export const Cards = () => {
                 imageUrl={"https://c4.wallpaperflare.com/wallpaper/41/681/303/pc-hd-1080p-nature-1920x1080-wallpaper-preview.jpg"}/>
             </Box>
             
+                <p className="how-to-use">How to use :</p>
                 <CodeBox code={code3}/>
             <Divider/>
             
@@ -95,6 +98,7 @@ export const Cards = () => {
         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       />
             </Box>
+            <p className="how-to-use">How to use :</p>
             <CodeBox code={` <TextCard title="your-title" text="your text." />`}/>
             
             
@@ -106,6 +110,7 @@ export const Cards = () => {
             <Box>
             < HorizontalCard    title="Card Title" content="This is the content of the card." imageUrl={"https://c4.wallpaperflare.com/wallpaper/41/681/303/pc-hd-1080p-nature-1920x1080-wallpaper-preview.jpg"}/>
             </Box>
+            <p className="how-to-use">How to use :</p>
             <CodeBox code={code4}/>
             <Divider/>
             
@@ -118,6 +123,7 @@ export const Cards = () => {
         description="Product description goes here."
         imageUrl={"https://files.myglamm.com/site-images/800x800/PSB1_1.jpg"}
       /></Box>
+      <p className="how-to-use">How to use :</p>
       <CodeBox code={code5}/>
             <Divider/>
     
@@ -127,6 +133,7 @@ export const Cards = () => {
             <Box>
                 <ShadowCard/>
             </Box>
+            <p className="how-to-use">How to use :</p>
             <CodeBox code={`<ShadowCard/>`}/>
             </div>
             

@@ -19,8 +19,19 @@ h1{
 .doc-paras{
     text-align: left;
 }
+.how-to-use{
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    color: #6610f2;
+}
 
-
+.doc-secondry-headings{
+    text-align: left;
+    font-size: 26px;
+    font-weight: bolder;
+    color: #6610f2;
+}
 
 .columns {
     display: flex;

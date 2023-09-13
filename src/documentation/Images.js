@@ -28,6 +28,7 @@ export const Images = () => {
             
             
             </Box>
+            <p className="how-to-use">How to use :</p>
             <CodeBox code={code1}/>
             <Divider/>
             <h3 className="doc-secondry-headings">Circular Image</h3>
@@ -37,6 +38,7 @@ export const Images = () => {
             <CircularImage src="https://c4.wallpaperflare.com/wallpaper/41/681/303/pc-hd-1080p-nature-1920x1080-wallpaper-preview.jpg" alt="normal-image"  className={"large"}/>
             
             </Box>
+            <p className="how-to-use">How to use :</p>
             <CodeBox code={code2} />
             <Divider/>
             <h3 className="doc-secondry-headings">Responsive Image</h3>
@@ -44,6 +46,7 @@ export const Images = () => {
                 <ResponsiveImage 
                 src="https://c4.wallpaperflare.com/wallpaper/41/681/303/pc-hd-1080p-nature-1920x1080-wallpaper-preview.jpg" alt="responsive-image"/>
             </Box>
+            <CodeBox code={`<ResponsiveImage src="image-url" alt="responsive-image"/>`} />
             
             </div>
             
