@@ -1,30 +1,33 @@
 
 
 .alert {
-    padding: 10px;
+    padding: 15px;
     border-radius: 4px;
     margin: 10px;
     font-weight: bold;
     display: inline-block;
+    width: 700px;
+    font-size: 18px;
   }
   
   .success {
-    background-color: #4CAF50;
+    background-color: #4caf50;
     color: white;
   }
   
   .error {
-    background-color: #F44336;
+    background-color: #f44336;
     color: white;
   }
   
   .warning {
-    background-color: #FFC107;
+    background-color: #ff9800;
     color: black;
   }
   
   .info {
-    background-color: #2196F3;
+    background-color: #4361ee;
     color: white;
+    
   }
   

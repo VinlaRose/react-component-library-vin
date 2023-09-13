@@ -1,4 +1,4 @@
-// Alert.js
+
 
 import React from 'react';
 import './Alert.css';

@@ -1,0 +1,32 @@
+.normal-image{
+    height: 200px;
+    width: 300ox;
+    object-fit: cover;
+}
+
+
+.circular-image {
+    /* display: inline-block; */
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .circular-image-inner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+ 
+  .circular-image.small {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .circular-image.large {
+    width: 350px;
+    height: 350px;
+  }
+  
+
+  
