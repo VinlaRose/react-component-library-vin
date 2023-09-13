@@ -1,7 +1,9 @@
 import React from 'react';
-import './Home.css'; // Import your custom CSS for styling
+import './Home.css'; 
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+    const navigate = useNavigate()
   return (
     <div className="home-page">
       <div className="home-content">
@@ -10,7 +12,7 @@ const Home = () => {
         <p className="home-description">
         Reausable, Simple and Elegant, frequently used React UI components at your disposal. 
         </p>
-        <button className="home-get-started-button">EXPLORE </button>
+        <button className="home-get-started-button" onClick={() => navigate("/components")} >EXPLORE </button>
       </div>
     </div>
   );

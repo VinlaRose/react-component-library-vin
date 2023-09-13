@@ -71,10 +71,10 @@ const SearchBar = () => {
       
       {
         searchQuery.length > 0 && (
-            <ul>
+            <ul className="search-results">
         {
             filteredItems.length > 0 && filteredItems.map(item => (
-                <li key={item} onClick={() => handleRedirect(item)}>
+                <li className="routing-list" key={item} onClick={() => handleRedirect(item)}>
               {item}
             </li>
             ))
