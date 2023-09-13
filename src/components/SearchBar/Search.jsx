@@ -1,38 +1,89 @@
+
 import React, { useState } from 'react';
-import './Search.css'; 
 
-const SearchBar = ({ onSearch }) => {
-  const [query, setQuery] = useState('');
+import items from './items';
+import './Search.css'
+import { useNavigate } from 'react-router-dom';
 
-  const handleSearch = () => {
-    if (query.trim() !== '') {
-      onSearch(query);
-    }
+const SearchBar = () => {
+    
+    const navigate = useNavigate()
+
+  const [searchQuery, setSearchQuery] = useState('');
+  const [filteredItems, setFilteredItems] = useState([]);
+
+  
+  const handleSearch = (e) => {
+    const query = e.target.value.toLowerCase();
+    setSearchQuery(query);
+    const filtered = items
+    .filter((item) => item.toLowerCase().includes(searchQuery));
+    setFilteredItems(filtered)
+   
+    
   };
 
-  const handleInputChange = (event) => {
-    setQuery(event.target.value);
-  };
+  const handleRedirect = (item) => {
+    console.log(item);
 
-  const handleKeyPress = (event) => {
-    if (event.key === 'Enter') {
-      handleSearch();
-    }
+    
+    const routeMap = {
+        Avatar: '/avatars',
+        Alert: '/alerts',
+        Badge: '/badges',
+        'Badge on Icons': '/badges',
+        'Badge on Avatars': '/badges',
+        Button: '/buttons',
+        Primary: '/buttons',
+        Link: '/buttons',
+        'Icon Button': '/buttons',
+        'Floating Action Button': '/buttons',
+        Card: '/cards',
+        'Cards with badges': '/cards',
+        'Cards with dismiss': '/cards',
+        'Cards with text overlay': '/cards',
+        'Text only cards': '/cards',
+        Vertical: '/cards',
+        'Horizontal cards': '/cards',
+        'Cards with shadow': '/cards',
+        Headings: '/headings',
+        Text: '/texts',
+        Image: '/images',
+        'Responsive image': '/images',
+        'Round image': '/images',
+      };
+
+    
+    const route = routeMap[item] || '/';
+    console.log(route)
+    navigate(route);
+    setSearchQuery("")
   };
 
   return (
-    <div className="search-container">
+    <div className="search-bar">
       <input
         type="text"
-        placeholder="Search..."
-        value={query}
-        onChange={handleInputChange}
-        onKeyPress={handleKeyPress}
-        className="search-input"
+        placeholder="Search for components..."
+        onChange={handleSearch}
+        value={searchQuery}
       />
-      {/* <button onClick={handleSearch} className="search-button">
-        Search
-      </button> */}
+      
+      {
+        searchQuery.length > 0 && (
+            <ul>
+        {
+            filteredItems.length > 0 && filteredItems.map(item => (
+                <li key={item} onClick={() => handleRedirect(item)}>
+              {item}
+            </li>
+            ))
+        }
+       
+      </ul>
+        )
+      }
+      
     </div>
   );
 };

@@ -1,6 +1,6 @@
 .normal-image{
     height: 200px;
-    width: 300ox;
+    width: 300px;
     object-fit: cover;
 }
 
@@ -26,6 +26,44 @@
   .circular-image.large {
     width: 350px;
     height: 350px;
+  }
+  
+
+  @media (max-width: 768px) {
+    
+    .normal-image{
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+    }
+    .circular-image.small {
+      max-width: 150px;
+      max-height: 150px; 
+    }
+    
+    .circular-image.large {
+      max-width: 200px;
+      max-height: 200px; 
+    }
+  }
+  
+  
+  /* for responsive image */
+  
+  .responsive-image-container {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  .responsive-image {
+    max-width: 100%;
+    height: auto;
   }
   
 

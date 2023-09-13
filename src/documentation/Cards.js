@@ -1,6 +1,8 @@
 import BadgeCard from "../components/Cards/BadgeCard/BadgeCard"
 import DismissCard from "../components/Cards/DismissCard/DismissCard"
 import HorizontalCard from "../components/Cards/HorizontalCard/HorizontalCard"
+import ShadowCard from "../components/Cards/ShadowCard/ShadowCard"
+import TextCard from "../components/Cards/TextOnlyCard/TextOnluCard"
 import TextOverlayCard from "../components/Cards/TextOverlayCard/TextOverlayCard"
 import VerticalCard from "../components/Cards/VerticalCard/VerticalCard"
 import Box from "./Box/Box"
@@ -14,14 +16,12 @@ const code1 =
 title="Card Title"
 content="This is the content of the card."
 badges={ ['Badge 1', 'Badge 2', 'Badge 3']}
-imageUrl={"https://c4.wallpaperflare.com/wallpaper/41/681/303/pc-hd-1080p-nature-1920x1080-wallpaper-preview.jpg"}
-/>
+imageUrl={"https://c4.wallpaperflare.com/wallpaper/41/681/303/pc-hd-1080p-nature-1920x1080-wallpaper-preview.jpg"}/>
+
 <BadgeCard
 title="Card Title"
 content="This is the content of the card."
-badges={ ['Badge 1', 'Badge 2']}
-
-/>`
+badges={ ['Badge 1', 'Badge 2']}/>`
 
 const code2 = 
 `
@@ -35,12 +35,12 @@ const code3 =
 
 const code4 = 
 `
-< HorizontalCard    title="Card Title" content="This is the content of the card." imageUrl={"image-url"}/>
+<HorizontalCard    title="Card Title" content="This is the content of the card." imageUrl={"image-url"}/>
 `
 
 const code5 = 
 `
-< VerticalCard    title="Card Title" content="This is the content of the card." imageUrl={"image-url"}/>
+<VerticalCard    title="Card Title" content="This is the content of the card." imageUrl={"image-url"}/>
 `
 
 export const Cards = () => { 
@@ -69,32 +69,65 @@ export const Cards = () => {
       <CodeBox code={code1}/>
             <Divider/>
             <h3 className="doc-secondry-headings">Cards with dismiss</h3>
+            <Box>
             <DismissCard  title="Card Title" content="This is the content of the card."/>
+            </Box>
+            
             <CodeBox code={code2}/>
             <Divider/>
             <h3 className="doc-secondry-headings">Cards with Text Overlay</h3>
+            <Box>
             <TextOverlayCard
                 title="Card Title"
                 content="This is the content of the card."
                 imageUrl={"https://c4.wallpaperflare.com/wallpaper/41/681/303/pc-hd-1080p-nature-1920x1080-wallpaper-preview.jpg"}/>
+            </Box>
+            
                 <CodeBox code={code3}/>
             <Divider/>
+            
+            
             <h3 className="doc-secondry-headings">Text only cards</h3>
+            <Box>
+                
+            <TextCard
+        title="Card Title"
+        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      />
+            </Box>
+            <CodeBox code={` <TextCard title="your-title" text="your text." />`}/>
+            
+            
             <Divider/>
+            
+            
+            
             <h3 className="doc-secondry-headings">Horizontal Card</h3>
+            <Box>
             < HorizontalCard    title="Card Title" content="This is the content of the card." imageUrl={"https://c4.wallpaperflare.com/wallpaper/41/681/303/pc-hd-1080p-nature-1920x1080-wallpaper-preview.jpg"}/>
+            </Box>
             <CodeBox code={code4}/>
             <Divider/>
+            
+            
             <h3 className="doc-secondry-headings">VerticalCard Card</h3>
+            <Box>
             <VerticalCard
         name="Product Name"
         price="29.99"
         description="Product description goes here."
         imageUrl={"https://files.myglamm.com/site-images/800x800/PSB1_1.jpg"}
-      />
+      /></Box>
       <CodeBox code={code5}/>
             <Divider/>
+    
+    
+    
             <h3 className="doc-secondry-headings">Card with Shadow</h3>
+            <Box>
+                <ShadowCard/>
+            </Box>
+            <CodeBox code={`<ShadowCard/>`}/>
             </div>
             
             

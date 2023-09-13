@@ -1,9 +1,9 @@
 
 
 .fab {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+    /* position: fixed; uncomment this when using in your project */
+    /* bottom: 20px;
+    right: 20px; */
     width: 56px;
     height: 56px;
     background-color: #3498db;
